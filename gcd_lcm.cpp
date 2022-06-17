@@ -108,6 +108,17 @@ int segments() {
 	return 0;
 }
 
+// Reduce a fraction
+void red_frac(int a, int b) {
+	// red_frac(3, 6)
+	// წილადში მრიცხველის და მნიშვნელის შეკვეცა
+	// ვეძებთ უდიდეს საერთო გამყოფს
+	int divider = gcd(a, b);
+	// შემდეგ ვყოფთ ორივე რიცხვს საერთო divider-თან
+	cout<<(a/divider)<<' '<<(b/divider);
+}
+
+
 int main() {
 	// int a, b;
 	// cin >> a >> b;
